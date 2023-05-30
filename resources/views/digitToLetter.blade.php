@@ -30,7 +30,12 @@
 							<div class="form-group">
 								<label>DIGITO:</label>
 								<input type="text" class="form-control" id ="valor1" name="valor1" required>
-							</div>							
+							</div>	
+							
+							<div class="form-group">
+								<label>RESULTADO:</label>
+								<input type="text" class="form-control" id="respuesta" disabled>
+							</div>
 
 							<div class="form-group">
 								<button type="submit" class="btn btn-success btn-lg">CALCULAR</button>
@@ -57,7 +62,7 @@ $("#conversor_form").submit(function(event) {
 	var token = $("input[name='_token']").val();
 	// var token = '{{csrf_token()}}';
 	var valora = $('#valor1').val();    
-	var data={valor1:valora, valor2:valorb , _method: "POST",_token:token};
+	var data={valor1:valora,  _method: "POST",_token:token};
 	console.log(data);
 	$.ajax({
 		url: '<?php echo route('digitToLetter_res') ?>',

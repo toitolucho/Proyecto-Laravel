@@ -25,9 +25,9 @@ class ControllerMathFunctions extends Controller
         //echo "estoy en la funcion ejemplo2";
          return view('maxOfThreeValues');
     }
-    public function digitToLetter(){
+    public function digittoletter(){
         
-        return view('digitToLetter');
+        return view('digittoletter');
     }
 
 
