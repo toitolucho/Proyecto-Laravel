@@ -29,6 +29,14 @@ Route::get('/ejemplo2','ControllerPrueba@ejemplo2')->name('prueba.ejemplo2');
 
 Route::post('/ejemplo2_res','ControllerPrueba@ejemplo2_res')->name('prueba.ejemplo2_res');
 
+
+Route::get('/digitToLetter','ControllerMathFunctions@digitToLetter')->name('digitToLetter');
+Route::post('/digitToLetter_res','ControllerPrueba@digitToLetter_res')->name('digitToLetter_res');
+
+Route::get('/maxOfThreeValues','ControllerMathFunctions@maxOfThreeValues')->name('maxOfThreeValues');
+Route::post('/maxOfThreeValues','ControllerPrueba@maxOfThreeValues_res')->name('maxOfThreeValues_res');
+
+
 // Route::get('/','ControllerPrueba@index')->name('prueba.index');
 // Route::get('/ejemplo2','ControllerPrueba@ejemplo2')->name('prueba.ejemplo2');
 
